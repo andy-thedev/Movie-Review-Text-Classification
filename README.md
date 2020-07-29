@@ -4,6 +4,12 @@ Introduction:
 
 The model takes a movie review (ie: .txt file), and determines if the movie review is likely to be positive or negative (a good movie experience/bad movie experience).
 
+Text_Classification.py -> The main algorithm
+
+model.h5 -> A saved model from running the main algorithm with comments on line 52 and line 96 removed (explained in README.md line 31)
+
+test.txt -> A 10/10 movie review of the film "Lion King", from the official imdb website to attempt predicting from sources outside of the training/testing data
+
 Design description:
 
 1) Retrieves the 88000 (reconfigurable) most frequently occurring words out of all training data (movie reviews), and creates dictionary mappings of each word to integer
