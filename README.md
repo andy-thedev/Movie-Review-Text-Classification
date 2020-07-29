@@ -6,7 +6,7 @@ The model takes a movie review (ie: .txt file), and determines if the movie revi
 
 Text_Classification.py -> The main algorithm
 
-model.h5 -> A saved model from running the main algorithm with comments on line 52 and line 96 removed (explained in README.md line 31)
+model.h5 -> A saved model from running the main algorithm with comments on line 52 and line 96 removed (explained below)
 
 test.txt -> A 10/10 movie review of the film "Lion King", from the official imdb website to attempt predicting from sources outside of the training/testing data
 
