@@ -124,8 +124,8 @@ with open("test.txt", encoding="utf-8") as f:
         encode = keras.preprocessing.sequence.pad_sequences([encode], value=word_index["<PAD>"], padding="post",
                                                        maxlen=250)
         predict = model.predict(encode)
-        print(line)
-        print(encode)
+        # print(line)
+        # print(encode)
         # The prediction will return a number close to 0: if the review is a negative review
         #                            a number close to 1: if the review is a positive review
         print(predict[0])
