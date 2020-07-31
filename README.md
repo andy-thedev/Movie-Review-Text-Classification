@@ -2,7 +2,7 @@ A repository containing a movie review text classification model using neural ne
 
 Introduction:
 
-The model takes a movie review (ie: .txt file), and determines if the movie review is likely to be positive or negative (a good movie experience/bad movie experience).
+The model takes a movie review (ie: .txt file), and determines if the movie review is likely to be positive or negative (a good movie experience/bad movie experience), determined by an embedding layer of word vectors, and their respective angles.
 
 Text_Classification.py -> The main algorithm
 
@@ -18,7 +18,7 @@ Design description:
 
 3) Assigns word vectors for each possible word (88000 cases), in 16 dimensions (ie: 16 coefficients in each vector formula), creating an embedding layer
 
-(The embedding layer, through training adjusts the word vectors into groups of narrow ranges of angles, by examining their context through "learns". This allows the model to determine which words are of similar, and distant connotations)
+(The embedding layer, through training adjusts the word vectors into groups of narrow ranges of angles, by examining their context through "learns". This allows the model to determine which words are of similar, and distant in connotation)
 
 4) Scales dimensions down into 1 dimension, utilizing the GlobalAveragePooling1D function, for efficient calculation and proccessing.
 
