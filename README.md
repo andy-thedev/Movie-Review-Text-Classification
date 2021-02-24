@@ -1,16 +1,25 @@
+# Movie Review Connotation Interpreter
+
 A repository containing a movie review text classification model using neural networks.
 
-Introduction:
+Language: Python  
+Libraries: Tensorflow, keras, numpy  
+Dataset: keras.datasets.imdb
 
+## Intro:
 The model takes a movie review (ie: .txt file), and determines if the movie review is likely to be positive or negative (a good movie experience/bad movie experience), determined by an embedding layer of word vectors, and their respective angles.
 
-Text_Classification.py -> The main algorithm
+## /:
+**Text_Classification.py:**  
+The main algorithm (See design description below)
 
-model.h5 -> A saved model from running the main algorithm with comments on line 52 and line 96 removed (explained below)
+**model.h5:**  
+A saved model from running the main algorithm with comments on line 52 and line 96 removed (See #8 in section: "Design Description")
 
-test.txt -> A 10/10 movie review of the film "Lion King", from the official imdb website to attempt predicting from sources outside of the training/testing data
+**test.txt:**  
+A 10/10 movie review of the film "Lion King", from the official imdb website to attempt predicting from sources outside of the training/testing data
 
-Design description:
+## Design description
 
 1) Retrieves the 88000 (reconfigurable) most frequently occurring words out of all training data (movie reviews), and creates dictionary mappings of each word to integer
 
@@ -32,13 +41,7 @@ Design description:
 
 9) There is also a review encoder, which takes a stripped line of strings, and turns it into a useable format for the model (list of integers), for external source reviews
 
-The model attempted to predict a 10/10 movie review ("Lion King") from the official imdb website (saved in a .txt file, passed and encoded in the algorithm)
-
-The model outputted 0.9775, a number very close to 1, suggesting a very positive review
-
-Libraries utilized: Tensorflow, keras, numpy
-
-Dataset utilized: keras.datasets.imdb
+# Outcome:
 
 Final epoch validation loss: 0.2944
 
