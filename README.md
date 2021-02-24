@@ -11,7 +11,7 @@ The model takes a movie review (ie: .txt file), and determines if the movie revi
 
 ## /
 **Text_Classification.py:**  
-The main algorithm (See design description below)
+The main algorithm (See section "Design description" below)
 
 **model.h5:**  
 A saved model from running the main algorithm with comments on line 52 and line 96 removed (See #8 in section: "Design Description")
