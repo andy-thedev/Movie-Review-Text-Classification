@@ -6,10 +6,10 @@ Language: Python
 Libraries: Tensorflow, keras, numpy  
 Dataset: keras.datasets.imdb
 
-## Intro:
+## Intro
 The model takes a movie review (ie: .txt file), and determines if the movie review is likely to be positive or negative (a good movie experience/bad movie experience), determined by an embedding layer of word vectors, and their respective angles.
 
-## /:
+## /
 **Text_Classification.py:**  
 The main algorithm (See design description below)
 
