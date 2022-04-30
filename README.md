@@ -1,5 +1,7 @@
 # Movie Review Connotation Interpreter
 
+## Credit: https://github.com/techwithtim
+
 A repository containing a movie review text classification model using neural networks.
 
 Language: Python  
